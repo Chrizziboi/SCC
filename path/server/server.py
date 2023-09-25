@@ -24,4 +24,5 @@ while True:
     print(f"connection received from: {address}")
     connection.send(f"Server has linked: {connection}")
 
+
     connection.close()
