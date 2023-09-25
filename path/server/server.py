@@ -1,4 +1,16 @@
 import socket
+from threading import Thread
+
+#method for connect and accept from client
+def  client_handler():
+    connection, address = server_socket.accept()
+    print(f"connection received from: {address}")
+    connection.send(f"Server has linked: {connection}")
+    while 1:
+        data = connection.recv(1024)
+        if not data:
+            break
+        print("Received message"), repr(data)
 
 # server ip adress
 Server_Host = "0.0.0.0"
@@ -18,11 +30,7 @@ server_socket.listen(5)
 
 print(f"[*] Listening as {Server_Host}:{Server_Port}")
 
-#connect and accept from client
-while True:
-    connection, address = server_socket.accept()
-    print(f"connection received from: {address}")
-    connection.send(f"Server has linked: {connection}")
+for x in range(4):
+    Thread(target=client_handler).start()
 
-
-    connection.close()
+server_socket.close()
