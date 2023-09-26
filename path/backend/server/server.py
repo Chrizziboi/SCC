@@ -22,20 +22,29 @@ print(f"[*] Listening as {server_host}:{server_port}")
 def  client_handler(client):
 
     while True:
+        #listen for clients
         try:
             msg = client.recv(1024).decode()
+            #disconnecting client
+            #removing client from set
         except Exception as e:
             client_sockets.remove(client)
         else:
             msg = msg.replace(separator_token, ":")
         for x in client_sockets:
             x.send(msg.encode())
-#listen for new connections
+#listen for new connections, add clients and start a new thread for msg
 while True:
-    connection, address = server_socket.accept()
-    print(f"connection received from: {address}")
-    cs = connection.encode("Server has linked")
-    connection.send(cs)
+    client_socket, address = server_socket.accept()
+    print(f" {address} :connected")
+    client_sockets.add(client_socket)
+    t = Thread(target=client_handler, args=(client_socket,))
+    t.daemon = True
+    t.start()
+
+for cs in client_sockets:
+    cs.close()
+    server_socket.close()
 
 '''
         #data being sent
