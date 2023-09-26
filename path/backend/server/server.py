@@ -20,6 +20,7 @@ print(f"[*] Listening as {server_host}:{server_port}")
 
 #method for connect and accept/decline from client
 def  client_handler(client):
+
     while True:
         try:
             msg = client.recv(1024).decode()

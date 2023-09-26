@@ -4,6 +4,7 @@ from threading import Thread
 from datetime import datetime
 from colorama import Fore, init, Back
 
+
 #colors for chat
 init()
 colors = [Fore.BLUE, Fore.GREEN, Fore.RED]
