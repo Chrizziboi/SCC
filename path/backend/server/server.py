@@ -25,10 +25,14 @@ def  client_handler(client):
         #listen for clients
         try:
             msg = client.recv(1024).decode()
+            if not msg:
+                break
             #disconnecting client
             #removing client from set
         except Exception as e:
+            print(f"[!] Error: {e}.")
             client_sockets.remove(client)
+            break
         else:
             msg = msg.replace(separator_token, ":")
         for x in client_sockets:
@@ -36,15 +40,16 @@ def  client_handler(client):
 #listen for new connections, add clients and start a new thread for msg
 while True:
     client_socket, address = server_socket.accept()
-    print(f" {address} :connected")
+    print(f" {address} :connected successfully")
     client_sockets.add(client_socket)
     t = Thread(target=client_handler, args=(client_socket,))
     t.daemon = True
     t.start()
 
-for cs in client_sockets:
-    cs.close()
+for x in client_sockets:
+    x.close()
     server_socket.close()
+
 
 '''
         #data being sent
@@ -53,9 +58,7 @@ for cs in client_sockets:
             break
         print("Received message"), repr(data)
         connection.close()
-'''
-
-
+        
 #accepting connections
 while True:
 
@@ -64,3 +67,4 @@ while True:
     client_handler()
 
 server_socket.close()
+'''
