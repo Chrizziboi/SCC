@@ -44,7 +44,8 @@ while True:
     if msg_send.lower() == 'q':
         break
     date_now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    msg_send = f"{client_color}[{date_now}]{client_name}{separator_token}{msg_send}{Fore.RESET}"
+    msg_send = f" {client_color} [{date_now}] {client_name} {separator_token} {msg_send} {Fore.RESET}"
+    print("bug here?")
     client_socket.send(msg_send.encode())
 
 client_socket.close()
