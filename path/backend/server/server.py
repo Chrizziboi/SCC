@@ -37,6 +37,7 @@ def  client_handler(client):
             msg = msg.replace(separator_token, ":")
         for x in client_sockets:
             x.send(msg.encode())
+
 #listen for new connections, add clients and start a new thread for msg
 while True:
     client_socket, address = server_socket.accept()
