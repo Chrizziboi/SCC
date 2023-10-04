@@ -17,7 +17,6 @@ client_socket = socket.socket()
 
 server_host = "127.0.0.1"
 server_port = 1337
-separator_token = "<SEP>"
 
 client_socket.connect((server_host, server_port))
 print(f"connected to: {server_host}.")
@@ -28,7 +27,6 @@ print(f"Welcome to the chat room, {client_name}.")
 #method for listening to messages from server
 def listen_for_msg():
     while True:
-        print(client_socket.recv(1024))
         message = client_socket.recv(1024).decode()
         print("\n" + message)
 
@@ -44,8 +42,7 @@ while True:
     if msg_send.lower() == 'q':
         break
     date_now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    msg_send = f" {client_color} [{date_now}] {client_name} {separator_token} {msg_send} {Fore.RESET}"
-    print("bug here?")
+    msg_send = f" {client_color} [{date_now}] {client_name} : {msg_send} {Fore.RESET}"
     client_socket.send(msg_send.encode())
 
 client_socket.close()

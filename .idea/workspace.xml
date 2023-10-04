@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e750f49-bd66-45c6-b811-2fd764c34ee5" name="Changes" comment="added requirements.txt, use command pip install -r requirements.txt to install packages." />
+    <list default="true" id="5e750f49-bd66-45c6-b811-2fd764c34ee5" name="Changes" comment="added requirements.txt, use command pip install -r requirements.txt to install packages.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path/backend/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/path/backend/client/client.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +149,8 @@
       <workItem from="1695818919813" duration="2954000" />
       <workItem from="1695840780291" duration="909000" />
       <workItem from="1696257027187" duration="673000" />
-      <workItem from="1696257759912" duration="597000" />
+      <workItem from="1696257759912" duration="1495000" />
+      <workItem from="1696402711270" duration="1911000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -218,7 +222,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1696258278778</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="added requirements.txt, use command pip install -r requirements.txt to install packages.">
+      <option name="closed" value="true" />
+      <created>1696258592324</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1696258592324</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,8 +259,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SCC$UI.coverage" NAME="UI Coverage Results" MODIFIED="1695655020116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/SCC$server.coverage" NAME="server Coverage Results" MODIFIED="1696257036296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/server" />
+    <SUITE FILE_PATH="coverage/SCC$server.coverage" NAME="server Coverage Results" MODIFIED="1696404586429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/server" />
     <SUITE FILE_PATH="coverage/SCC$mulig_serverkode.coverage" NAME="mulig_serverkode Coverage Results" MODIFIED="1695667823842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/SCC$client.coverage" NAME="client Coverage Results" MODIFIED="1696257042128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
+    <SUITE FILE_PATH="coverage/SCC$client.coverage" NAME="client Coverage Results" MODIFIED="1696404589888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
   </component>
 </project>
