@@ -16,12 +16,6 @@ def rot13dec(message):
 
     return message.translate(str12)
 
-
-def main():
-
-    print(rot13enc(message))
-
-
 while True:
     message = rot13enc(input(" --> "))
     print("returning encrypted message")

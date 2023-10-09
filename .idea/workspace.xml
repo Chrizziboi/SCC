@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e750f49-bd66-45c6-b811-2fd764c34ee5" name="Changes" comment="added requirements.txt, use command pip install -r requirements.txt to install packages.">
-      <change afterPath="$PROJECT_DIR$/test/rot13_encryption_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/transposition_cipher_encrytion_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5e750f49-bd66-45c6-b811-2fd764c34ee5" name="Changes" comment="added an encryption method for potential use, not implemented.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/path/backend/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/path/backend/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/path/backend/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/path/backend/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,8 @@
       <workItem from="1696257759912" duration="1495000" />
       <workItem from="1696402711270" duration="1911000" />
       <workItem from="1696828254215" duration="565000" />
-      <workItem from="1696828893895" duration="1307000" />
+      <workItem from="1696828893895" duration="1658000" />
+      <workItem from="1696835115389" duration="3000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -259,7 +254,14 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1696258592324</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="added an encryption method for potential use, not implemented.">
+      <option name="closed" value="true" />
+      <created>1696830305376</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1696830305376</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,12 +287,13 @@
     <MESSAGE value="connection between client and server is established" />
     <MESSAGE value="connection between client and server is established and can send messages between clients." />
     <MESSAGE value="added requirements.txt, use command pip install -r requirements.txt to install packages." />
-    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt, use command pip install -r requirements.txt to install packages." />
+    <MESSAGE value="added an encryption method for potential use, not implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="added an encryption method for potential use, not implemented." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SCC$UI.coverage" NAME="UI Coverage Results" MODIFIED="1695655020116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/SCC$server.coverage" NAME="server Coverage Results" MODIFIED="1696404586429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/server" />
-    <SUITE FILE_PATH="coverage/SCC$rot13_encryption_test.coverage" NAME="rot13_encryption_test Coverage Results" MODIFIED="1696830148566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/SCC$rot13_encryption_test.coverage" NAME="rot13_encryption_test Coverage Results" MODIFIED="1696832004077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/SCC$mulig_serverkode.coverage" NAME="mulig_serverkode Coverage Results" MODIFIED="1695667823842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/SCC$client.coverage" NAME="client Coverage Results" MODIFIED="1696404589888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
   </component>
