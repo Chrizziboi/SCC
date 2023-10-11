@@ -1,6 +1,5 @@
 import socket
 from threading import Thread
-import cryptography
 
 def main():
     # server ip address
@@ -50,10 +49,10 @@ def main():
         t.daemon = True
         t.start()
 
-    for x in client_sockets:
+'''    for x in client_sockets:
         x.close()
         server_socket.close()
-
+'''
 main()
 
 
