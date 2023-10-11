@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e750f49-bd66-45c6-b811-2fd764c34ee5" name="Changes" comment="added an encryption method for potential use, not implemented.">
-      <change afterPath="$PROJECT_DIR$/path/backend/client/client2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/path/backend/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/path/backend/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/path/backend/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/path/backend/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/transposition_cipher_encrytion_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/AES_128_encryption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AES_128_encryption.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/AES_128_encryption.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/server_tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/server_tester.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <recent name="C:\Users\maar_\PycharmProjects\SCC\path" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client2">
+  <component name="RunManager" selected="Python tests.Python tests for server_tester.test_if_rot13enc_works">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SCC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,28 +99,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/path/backend/client/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="client2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SCC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/path/backend/client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/path/backend/client/client2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,9 +151,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for server_tester.test_if_rot13enc_works" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SCC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;server_tester.test_if_rot13enc_works&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in server_tester.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SCC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/server_tester.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.client2" />
+        <item itemvalue="Python tests.Python tests for server_tester.test_if_rot13enc_works" />
+        <item itemvalue="Python tests.Python tests in server_tester.py" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server" />
         <item itemvalue="Python.rot13_encryption_test" />
@@ -212,6 +220,9 @@
       <workItem from="1696863870813" duration="2120000" />
       <workItem from="1696932498937" duration="4923000" />
       <workItem from="1697007411626" duration="2399000" />
+      <workItem from="1697022329288" duration="619000" />
+      <workItem from="1697036529979" duration="1486000" />
+      <workItem from="1697048378062" duration="1139000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -357,9 +368,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SCC$UI.coverage" NAME="UI Coverage Results" MODIFIED="1695655020116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/SCC$client2.coverage" NAME="client2 Coverage Results" MODIFIED="1697009372632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
-    <SUITE FILE_PATH="coverage/SCC$rot13_encryption_test.coverage" NAME="rot13_encryption_test Coverage Results" MODIFIED="1697007461118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/SCC$server.coverage" NAME="server Coverage Results" MODIFIED="1697009155194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/server" />
+    <SUITE FILE_PATH="coverage/SCC$rot13_encryption_test.coverage" NAME="rot13_encryption_test Coverage Results" MODIFIED="1697049009767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/SCC$server.coverage" NAME="server Coverage Results" MODIFIED="1697049080403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/server" />
+    <SUITE FILE_PATH="coverage/SCC$.coverage" NAME=" Coverage Results" MODIFIED="1697049445770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/SCC$mulig_serverkode.coverage" NAME="mulig_serverkode Coverage Results" MODIFIED="1695667823842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/SCC$client.coverage" NAME="client Coverage Results" MODIFIED="1697009160141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
+    <SUITE FILE_PATH="coverage/SCC$client.coverage" NAME="client Coverage Results" MODIFIED="1697049095136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/path/backend/client" />
   </component>
 </project>
