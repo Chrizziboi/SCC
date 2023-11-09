@@ -19,10 +19,10 @@ server_host = "127.0.0.1"
 server_port = 1337
 
 client_socket.connect((server_host, server_port))
-print(f"connected to: {server_host}.")
+print(f"Koblet til: {server_host}.")
 
-client_name = input("Enter you name: ")
-print(f"Welcome to the chat room, {client_name}.")
+client_name = input("Skriv inn ditt navn: ")
+print(f"Velkommen til Chatte-rommet, {client_name}.")
 
 #method for listening to messages from server
 def listen_for_msg():

@@ -17,7 +17,7 @@ def main():
     server_socket.bind((server_host, server_port))
     #listen for upcoming connections
     server_socket.listen(5)
-    print(f"[*] Listening as {server_host}: {server_port}")
+    print(f"[*] Hører etter som {server_host}: {server_port}")
 
     #method for connect and accept/decline from client
     def  client_handler(client):
@@ -43,7 +43,7 @@ def main():
     while True:
 
         client_socket, address = server_socket.accept()
-        print(f" {address} :connected successfully")
+        print(f" {address} :Vellykket tilkobling")
         client_sockets.add(client_socket)
         t = Thread(target=client_handler, args=(client_socket,))
         t.daemon = True
