@@ -1,17 +1,30 @@
-import dearpygui.dearpygui as dpg
-from dearpygui.demo import show_demo
+import tkinter as tk
+from tkinter import scrolledtext
 
-dpg.create_context()
-dpg.create_viewport()
-dpg.setup_dearpygui()
+def send_message():
+    message = entry.get()
+    if message:
+        chat_box.config(state=tk.NORMAL, fg='gainsboro', bg='#11242C')
+        chat_box.insert(tk.END, "You: " + message + "\n")
+        chat_box.config(state=tk.DISABLED)
+        entry.delete(0, tk.END)
 
-with dpg.window(label="Social Car Club", width=350, height=250):
-    dpg.add_text("Velkommen til Social Car Club\n\n"
-                 "Venligst logg inn med brukernavn og passord")
-    dpg.add_child_window(label="login")
+# Opprett hovedvinduet
+root = tk.Tk()
+root.title("Chat Room")
+root.configure(bg='#11242C')
 
+# Opprett chatboksen
+chat_box = scrolledtext.ScrolledText(root, state=tk.DISABLED, wrap=tk.WORD, fg='gainsboro', bg='#11242C')
+chat_box.pack(expand=True, fill=tk.BOTH)
 
+# Opprett inntastingsfeltet
+entry = tk.Entry(root, width=50, fg='#11242C', bg='snow2')
+entry.pack(side=tk.LEFT, padx=10, pady=10)
 
-dpg.show_viewport()
-dpg.start_dearpygui()
-dpg.destroy_context()
+# Opprett sende-knappen
+send_button = tk.Button(root, text="Send", command=send_message, fg='#11242C', bg='gainsboro')
+send_button.pack(side=tk.RIGHT, padx=10, pady=10)
+
+# Start hovedloopen
+root.mainloop()

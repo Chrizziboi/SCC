@@ -45,7 +45,7 @@ def main():
         client_socket, address = server_socket.accept()
         print(f" {address} :Vellykket tilkobling")
         client_sockets.add(client_socket)
-        t = Thread(target=client_handler, args=(client_socket,))
+        t = Thread(target=client_handler, args=(client_socket))
         t.daemon = True
         t.start()
 
